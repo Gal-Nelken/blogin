@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+    <title>Bloger</title>
+</head>
+
+<body>
+
+    <div class="main-screen" onclick="toggleScreen(this)"></div>
+
+    <nav class="main-nav">
+        <div class="nav-container container flex align-center justify-center wrap">
+            <h5 class="header-logo logo flex align-center">Blogin</h5>
+            <ul class="main-nav-links flex clean-list wrap  justify-center">
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="main-nav-btn" onclick="toggleMenu (this)">☰</button>
+        </div>
+    </nav>
+
+    <main class="main-container container">
+        <div class="post flex">
+            <img src="./img/post-1.png" alt="post">
+            <div class="post-container flex col">
+                <h2 class="post-title">Wake Up With Determination</h2>
+                <div class="post-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, minus asperiores, omnis ab odit
+                        tenetur magni praesentium, vero ratione quaerat dolor nulla rerum quibusdam quos! Similique,
+                        libero
+                        quam! Ipsam,
+                        aut.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing el Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Nostrum voluptate, alias dolorem perferendis natus eligendi iure velit culpa
+                        ullam libero, accusantium ut quaerat error minus aspernatur praesentium, porro explicabo.
+                        Magnam. it. Omnis, neque ab iusto alias unde molestias,
+                        debitis dolore aperiam blanditiis?</p>
+                </div>
+                <button class="read-btn" onclick="toggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="post flex">
+            <img src="./img/post-2.png" alt="teasr">
+            <div class="post-container flex col">
+                <h2 class="post-title">Go To Sleep With Sattisfaction</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente harum enim laborum illo asperiores,
+                    amet consequuntur necessitatibus ad accusantium excepturi, esse vitae repellendus. Deserunt ut
+                    voluptate
+                    sunt odio eum pariatur?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati recusandae sapiente s
+                    possimus architecto ex, veniam expedita.</p>
+                <button class="read-btn" onclick="toggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <div class="post flex">
+            <img src="./img/post-3.png" alt="post">
+            <div class="post-container flex col">
+                <h2 class="post-title">Live Free Regret Nothing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquam itaque impedit aliquid
+                    omnis
+                    doloribus atque voluptatum magnam facere quia consectetur, voluptate recusandae repellendus,
+                    similique
+                    eos! Consequatur autem itaque labore.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati recusandae sapiente s
+                    possimus architecto ex, veniam expedita.</p>
+                <button class="read-btn" onclick="toggleModal()">Continue Reading</button>
+            </div>
+        </div>
+
+        <nav class="page-btn-nav flex space-between">
+            <button class="page-prv-btn"> ← previous</button>
+            <button class="page-next-btn"> next → </button>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="container flex col justify-center align-center ">
+            <h5 class="logo footer-logo">Blogin</h5>
+            <small>
+                <p>
+                    &copy 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a
+                        href="https://twitter.com/pixelhint">PixelHint.com</a>
+                </p>
+            </small>
+            <ul class="social-nav flex align-center justify-center">
+                <a href="https://www.facebook.com/  " class="fa facebook"></a>
+                <a href="https://twitter.com/" class="fa twitter"></a>
+                <a href="https://www.behance.net/" class="fa behance"></a>
+                <a href="https://github.com/" class="fa gitHub"></a>
+            </ul>
+        </div>
+    </footer>
+
+    <section class="moadl-container container flex align-center col space-around">
+        <button class="close-modal close-modal-corner" onclick="toggleModal()">X</button>
+        <h3>Join us to get access to the latest stories!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam impedit delectus nihil odit autem deserunt
+            sapiente modi atque consectetur. Ex voluptatum nihil beatae nostrum facilis mollitia dicta nulla
+            voluptatibus vel!</p>
+        <div class="flex">
+            <label for="user-emali">Your email:</label>
+            <input type="email" name="user-email" id="user-emali" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div class="modal-btns flex space-between">
+            <button class="close-modal" onclick=" toggleModal()">Close</button>
+            <button class="modal-submit" onclick="onSubmit()">Submit</button>
+        </div>
+    </section>
+
+
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
